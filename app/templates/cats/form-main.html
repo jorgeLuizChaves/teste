@@ -1,0 +1,106 @@
+<div class="row">
+   <div class="col-sm-8 col-md-offset-2">
+       <div class="form-group fg-float">
+           <div class="fileinput-preview img-circle thumbnail" data-trigger="fileinput"
+                style="width: 160px; height: 160px;"></div>
+           <input  type="file">
+       </div>
+   </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-8 col-md-offset-2">
+        <div class="form-group fg-float">
+            <div class="fg-line">
+                <input type="text" ng-model="catService.cat.name" class="input-sm form-control fg-input">
+                <label class="fg-label">nome</label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-8 col-md-offset-2">
+        <p class="c-black f-500 m-b-20">Gênero</p>
+        <div class="radio m-b-15">
+            <label>
+                <input type="radio" name="gender" ng-model="catService.cat.gender" value="male">
+                <i class="input-helper" ></i>
+
+                <div style="width: 70px; float: left">Masculino</div>
+                <i class="fa fa-mars" style=""></i>
+            </label>
+        </div>
+        <div class="radio m-b-15">
+            <label>
+                <input type="radio" name="gender" ng-model="catService.cat.gender" value="Female">
+                <i class="input-helper"></i>
+                <div style="width: 70px; float: left">Feminino</div>
+                <i class="fa fa-venus" style=""></i>
+            </label>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin-top: 25px">
+    <div class="col-sm-8 col-md-offset-2">
+        <div class="form-group fg-float">
+            <div class="fg-line">
+                <input type="text" ng-model="catService.cat.birthdate" class="input-sm form-control fg-input" >
+                <label class="fg-label">data de nascimento</label>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-sm-8 col-md-offset-2">
+        <div class="form-group fg-float">
+            <div class="fg-line">
+                <input type="text" ng-model="catService.cat.fur" class="input-sm form-control fg-input">
+                <label class="fg-label">pelo</label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-8 col-md-offset-2">
+        <div class="form-group" >
+            <label class="checkbox checkbox-inline m-r-20">
+
+                <input type="checkbox" ng-model="catService.cat.isRecued" value="true">
+                <i class="input-helper"></i>
+                resgatado?
+            </label>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-sm-8 col-md-offset-2">
+        <p class="c-black f-500 m-b-20">Tipo Pelo</p>
+
+        <div class="form-group">
+            <div class="fg-line">
+                <div class="select">
+                    <select class="form-control" ng-model="catService.cat.furType">
+                        <option>Curto</option>
+                        <option>Longo</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-8 col-md-offset-2">
+        <div class="form-group fg-float">
+            <div class="fg-line">
+                <input type="text" ng-model="catService.cat.furColor" class="input-sm form-control fg-input">
+                <label class="fg-label">cor pelo</label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="text-align: center">
+    <input type="submit" class="btn btn-success waves-effect" value="salvar">
+</div>
+

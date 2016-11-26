@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9" ng-app="mundogato"><![endif]-->
+<html ng-app="mundogato">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Admin</title>
+
+        <!-- Vendor CSS -->
+        <link href="../bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="../bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="css/demo.css">
+
+        <!-- CSS -->
+        <link href="css/app_1.min.css" rel="stylesheet">
+    </head>
+
+    <body ng-controller="LoginController">
+        <div class="login-content" style="background: url('img/bg02.jpg') center">
+            <!-- Login -->
+
+            <div class="lc-block toggled" id="l-login">
+                <form ng-submit="login()" novalidate>
+                    <div class="lcb-form">
+                        <div class="form-group">
+                            <div class="fg-line">
+                                <input type="text" class="form-control" ng-model="formLogin.username" placeholder="Usuário">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="fg-line">
+                                <input type="password" class="form-control" ng-model="formLogin.password" placeholder="Senha">
+                            </div>
+                        </div>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                <i class="input-helper"></i>
+                                Ficar conectado
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-login btn-success btn-float waves-effect waves-circle waves-float" ng-click="login()">
+                            <i class="zmdi zmdi-arrow-forward"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="lcb-navigation">
+                    <a href="" class="nav-color-mg" data-ma-action="login-switch" data-ma-block="#l-forget-password"><i>?</i> <span>Forgot Password</span></a>
+                </div>
+            </div>
+            <!-- Forgot Password -->
+            <div class="lc-block" id="l-forget-password">
+                <div class="lcb-form">
+                    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu risus. Curabitur commodo lorem fringilla enim feugiat commodo sed ac lacus.</p>
+
+                    <div class="fg-line">
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+
+                    <a href="" class="btn btn-login btn-mg"><i class="zmdi zmdi-check"></i></a>
+                </div>
+
+                <div class="lcb-navigation">
+                    <a href="" class="nav-color-mg" data-ma-action="login-switch" data-ma-block="#l-login"><i class="zmdi zmdi-long-arrow-right"></i> <span>Sign in</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Javascript Libraries -->
+        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../bower_components/Waves/dist/waves.min.js"></script>
+        <script src="../bower_components/angular/angular.min.js"></script>
+        <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="../bower_components/firebase/firebase.js"></script>
+        <script type="text/javascript" src="../bower_components/angularfire/dist/angularfire.min.js"></script>
+
+
+        <script src="js/app.min.js"></script>
+        <script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="js/app2.js"></script>
+        <script src="js/config.js"></script>
+        <script>
+            // Initialize Firebase
+            // TODO: Replace with your project's customized code snippet
+            var config = {
+                apiKey: "AIzaSyAtItuaaHIUMVUB6di4U2StUkJprDfnZWE",
+                authDomain: "mundogato-backoffice.firebaseapp.com",
+                databaseURL: "https://mundogato-backoffice.firebaseio.com",
+                storageBucket: "mundogato-backoffice.appspot.com",
+                messagingSenderId: "315895693770",
+            };
+            firebase.initializeApp(config);
+        </script>
+    </body>
+</html>
